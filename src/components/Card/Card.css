@@ -3,8 +3,8 @@ figure {
     border-radius: 16px;
     overflow: hidden; /*très important pour que le radius s’applique à l’image */
     width: 200px; /*permet d'avoir une taille fixe pour toutes les figures*/
-
 }
+
 figure img {
     width: 100%;
     height: 200px;
@@ -13,8 +13,11 @@ figure img {
 }
 
 figure figcaption {
+    color: beige;
     display: flex;
     justify-content: center;
     
 }
+
+
 

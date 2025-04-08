@@ -4,38 +4,53 @@
 
 body {
     margin: 0px;
+    background-color: rgb(10, 1, 1);
+    
+    
 }
 
 
 
-h1 {
+main h1 {
     font-size: 32px;
-    text-align: center;
+    justify-content: center;
+    
 
 }
 
 
 .planete {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
 }
 
+#barre {
+  
+}
+
+
+
+
+
 @media screen and (min-width: 700px) {
     main {
-        background-color: blue;
+        
     }
 
     .planete {
-        display: flex;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: 2 30%;
 
 
 
     }
 
-    #barre {}
+    
 
 }
 
