@@ -4,14 +4,21 @@
 
 body {
     margin: 0px;
+    background-color: black;
+
 }
 
 
+main {
+    min-height: calc(100vh - 15vh - 10vh);
+    /* mettre une height au footer et au header de même taille*/
+}
 
-h1 {
+main h1 {
     font-size: 32px;
     text-align: center;
-
+    margin: 0px;
+    padding: 15px;
 }
 
 
@@ -20,22 +27,39 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
+}
+
+main input {
+    width: 50%;
+    margin: 50px;
+
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 @media screen and (min-width: 700px) {
     main {
-        background-color: blue;
+        /*background-color: blue;*/
     }
 
     .planete {
         display: flex;
-
-
+        flex-direction: row;
+        justify-content: center;
 
     }
 
-    #barre {}
+    #barre {
+        max-width: 500px;
+    }
 
 }
 

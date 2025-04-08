@@ -1,6 +1,6 @@
 header {
     padding: 0px;
-    height: 100px;
+    height: 15vh;
     width: 100%;
     background-image: url("espace.jpg");
     display: flex;
@@ -47,7 +47,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 40px;
     color: white;
 }
 
@@ -58,19 +58,25 @@ h2 {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-
     }
 
     header ul {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+    }
 
+    .logo {
+        height: 100px;
+        width: 100px;
     }
 }
 
-@media screen and (max-width:700px) {
+
+@media screen and (max-width:860px) {
     h2 {
         display: none;
     }
+
+
 }
