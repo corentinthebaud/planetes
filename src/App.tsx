@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './App.css'
 import Card from './components/Card/Card'
 
@@ -40,15 +41,22 @@ const arrayOfPlanete = [
 
 function App() {
 
+  const [planeteName, setPlaneteName] = useState('');
+
+  const filterPlanete = arrayOfPlanete.filter(item => item.name.toLowerCase().includes(planeteName.toLowerCase()));
+  
 
   return (
     <>
     <main>
-    <h1>Les planètes</h1>
+    <h1>Les planètes </h1>
     <section className='planete'>
-    {arrayOfPlanete.map((element) => {
+      <input id ="barre" type="text" placeholder='Entrez le nom de la planète'  onChange={(e) => setPlaneteName(e.target.value)} ></input>
+    {filterPlanete.map((planete) => {
+      
         return (
-          <Card name={element.name} imgSrc={element.imgSrc} />
+
+          <Card name={planete.name} imgSrc={planete.imgSrc} />
         )
       })}
     </section>

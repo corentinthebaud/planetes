@@ -16,6 +16,23 @@ h1 {
     gap: 10px;
 }
 
+@media screen and (min-width: 700px)  {
+    main {
+        background-color: blue;
+    }
+    .planete {
+         display: flex ;
+         
+         
+
+    }
+
+    #barre {
+
+
+    }
+    
+}
     /* display: grid;
     grid-template-columns: repeat(3, 1fr); /* 4 par ligne */
     /* gap: 10px;  */
