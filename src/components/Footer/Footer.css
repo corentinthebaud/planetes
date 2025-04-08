@@ -1,9 +1,10 @@
 footer {
     padding: 0px;
-    height: 100px;
+    height: 10vh;
     width: 100%;
     background-image: url("espace.jpg");
     display: flex;
+
 }
 
 h1 {

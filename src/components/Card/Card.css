@@ -1,20 +1,25 @@
 figure {
-    border: 1px solid rgb(87, 0, 238);
+    border: 1px solid white;
     border-radius: 16px;
-    overflow: hidden; /*très important pour que le radius s’applique à l’image */
-    width: 200px; /*permet d'avoir une taille fixe pour toutes les figures*/
+    overflow: hidden;
+    /*très important pour que le radius s’applique à l’image */
+    width: 200px;
+    /*permet d'avoir une taille fixe pour toutes les figures*/
 
 }
+
 figure img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* pour garder un beau cadrage */
+    object-fit: cover;
+    /* pour garder un beau cadrage */
     /* display: block; */
 }
 
 figure figcaption {
     display: flex;
     justify-content: center;
-    
-}
+    color: white;
 
+
+}

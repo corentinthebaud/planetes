@@ -56,8 +56,9 @@ function App() {
       <Header />
       <main>
         <h1>Les planètes </h1>
+        <div><input type="text" placeholder='Entrez le nom de la planète' onChange={(e) => setPlaneteName(e.target.value)} ></input></div>
         <section className='planete'>
-          <input id="barre" type="text" placeholder='Entrez le nom de la planète' onChange={(e) => setPlaneteName(e.target.value)} ></input>
+
           {filterPlanete.map((planete) => {
 
             return (
