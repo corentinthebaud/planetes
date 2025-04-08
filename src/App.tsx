@@ -1,7 +1,12 @@
 
 import { useState } from 'react'
 import './App.css'
-import Card from './components/Card/Card'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Card from './components/Card/Card';
+
+
+
 
 const arrayOfPlanete = [
   {
@@ -36,7 +41,7 @@ const arrayOfPlanete = [
     name: "Neptune",
     imgSrc: "public/planete/Neptune.webp"
   },
-  
+
 ]
 
 function App() {
@@ -44,27 +49,29 @@ function App() {
   const [planeteName, setPlaneteName] = useState('');
 
   const filterPlanete = arrayOfPlanete.filter(item => item.name.toLowerCase().includes(planeteName.toLowerCase()));
-  
+
 
   return (
     <>
-    <main>
-    <h1>Les planètes </h1>
-    <section className='planete'>
-      <input id ="barre" type="text" placeholder='Entrez le nom de la planète'  onChange={(e) => setPlaneteName(e.target.value)} ></input>
-    {filterPlanete.map((planete) => {
-      
-        return (
+      <Header />
+      <main>
+        <h1>Les planètes </h1>
+        <section className='planete'>
+          <input id="barre" type="text" placeholder='Entrez le nom de la planète' onChange={(e) => setPlaneteName(e.target.value)} ></input>
+          {filterPlanete.map((planete) => {
 
-          <Card name={planete.name} imgSrc={planete.imgSrc} />
-        )
-      })}
-    </section>
+            return (
 
-    </main>
-      
+              <Card name={planete.name} imgSrc={planete.imgSrc} />
+            )
+          })}
+        </section>
+
+      </main>
+      <Footer />
+
     </>
   )
 }
 
-export default App
+export default App;
