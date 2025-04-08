@@ -56,18 +56,19 @@ function App() {
       <Header />
       <main>
         <h1>Les planètes </h1>
-        <div><input type="text" placeholder='Entrez le nom de la planète' onChange={(e) => setPlaneteName(e.target.value)} ></input></div>
+
+        <div>
+          <input type="text" placeholder='Entrez le nom de la planète' onChange={(e) => setPlaneteName(e.target.value)} ></input>
+        </div>
+
         <section className='planete'>
 
           {filterPlanete.map((planete) => {
-
             return (
-
               <Card name={planete.name} imgSrc={planete.imgSrc} />
             )
           })}
         </section>
-
       </main>
       <Footer />
 
