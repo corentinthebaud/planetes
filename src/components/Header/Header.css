@@ -10,15 +10,15 @@ header ul {
     margin: 20px;
     display: flex;
     gap: 20px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
     list-style: none;
 }
 
 nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     width: 100%;
-
 }
 
 a {
@@ -28,7 +28,6 @@ a {
 }
 
 .espace {
-    /*border: 2px solid green;*/
     object-fit: contain;
     height: 100%;
     width: 100%;
@@ -37,33 +36,41 @@ a {
 .logo {
     margin: 16px;
     object-fit: contain;
-    height: 50px;
-    width: 50px;
-
+    height: 70px;
+    width: 70px;
 }
 
-/*h2 {
-    border: 2px solid yellow;
+h2 {
     margin: 0px;
+    height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
     color: white;
-}*/
+}
 
 
 
 @media screen and (min-width:600px) {
     header {
         display: flex;
-        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+
     }
 
     header ul {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
+        align-items: flex-end;
 
+    }
+}
+
+@media screen and (max-width:700px) {
+    h2 {
+        display: none;
     }
 }
